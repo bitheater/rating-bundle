@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <mapped-superclass name="Bitheater\RatingBundle\Model\Vote" repository-class="Bitheater\RatingBundle\Repository\Doctrine\ORMRepository">
+
+        <field name="voterId" column="voterId" type="integer" />
+
+        <field name="value" column="value" type="integer" />
+
+        <field name="resourceId" column="resourceId" type="integer" />
+
+        <field name="resourceKey" column="resourceKey" type="string" />
+
+        <field name="createdAt" column="createdAt" type="datetime" />
+
+    </mapped-superclass>
+
+</doctrine-mapping>
